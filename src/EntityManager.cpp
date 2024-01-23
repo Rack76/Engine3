@@ -1,6 +1,8 @@
-#include "pnpch.h"
-#include "EtityManager.h"
+#include "EntityManager.h"
+#include "Transform.h"
 
-void Phoenix::EntityManager::addEntity()
+void Engine::EntityManager::addEntity()
 {
+	VLUI64 entityType = Transform::typeId();
+	archetypes[entityType].addEntity(entityType);
 }
