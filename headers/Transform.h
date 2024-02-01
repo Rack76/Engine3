@@ -1,5 +1,5 @@
 #ifndef TRANSFORM_H
-#define TRANSFORM
+#define TRANSFORM_H
 
 #include "Component.h"
 

@@ -31,5 +31,11 @@ public:
 		assigned = true;
 		return TypeId;
 	}
+
+	void reset()
+	{
+		*this = T();
+	}
 };
+
 #endif

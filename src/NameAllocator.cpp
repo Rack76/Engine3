@@ -1,5 +1,6 @@
 #include "NameAllocator.h"
 #include <limits>
+#include <iostream>
 
 int NameAllocator::getName()
 {
@@ -12,7 +13,7 @@ int NameAllocator::getName()
         }
         else
         {
-            Log::error("name not allocated : max count reached");
+            std::cerr << "name not allocated : max count reached";
             return -1;
         }
     }
@@ -34,5 +35,5 @@ void NameAllocator::returnName(int name)
         restoredNames.insert({ name, name });
     }
     else
-        Log::error("name not returned : name not allocated");
+        std::cerr << "name not returned : name not allocated";
 }
