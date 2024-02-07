@@ -5,6 +5,7 @@
 #include "EntityManager.h"
 #include "Transform.h"
 #include "Mesh.h"
+#include "Shader.h"
 #include <cassert>
 
 void testAddEntity()
@@ -46,7 +47,25 @@ void testGetComponent()
 	assert(meshComponent->value == 5);
 }
 
+void testGetArchetypes()
+{
+	ComponentManager::registerComponent<Transform>();
+	ComponentManager::registerComponent<Mesh>();
+	ComponentManager::registerComponent<Shader>();
+	EntityId entity1 = Engine::EntityManager::addEntity();
+	Engine::EntityManager::addComponent<Mesh>(entity1);
+	Engine::EntityManager::addComponent<Shader>(entity1);
+	VLUI64 include;
+	auto archetypes = Engine::EntityManager::getArchetypesWith(Mesh::typeId() | Shader::typeId());
+	auto archetype = archetypes[0];
+	for (auto entity : archetype.getEntities())
+	{
+		Shader* shader = (Shader*)entity.second.at(Shader::typeId());
+		std::cout << shader->value << std::endl;
+	}
+}
+
 int main()
 {
-	testGetComponent();
+	testGetArchetypes();
 }

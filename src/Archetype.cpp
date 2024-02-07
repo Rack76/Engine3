@@ -24,6 +24,7 @@ int Archetype::transferEntity(int id, VLUI64 componentType, Archetype& destArche
 	auto map = entities.at(id);
 	int newId = destArchetype.addEntity(map);
 	destArchetype.addComponent(newId, componentType);
+	entities.erase(id);
 	return newId;
 }
 

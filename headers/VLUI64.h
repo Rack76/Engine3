@@ -7,6 +7,11 @@
 class VLUI64
 {
 public:
+	VLUI64(unsigned long long val)
+	{
+		quadwords.insert({ 0, val });
+	}
+
 	VLUI64()
 	{
 		quadwords.insert({ 0, 1 });
@@ -53,6 +58,19 @@ public:
 		return returnValue;
 	}
 
+	VLUI64 operator&(const VLUI64& r) const
+	{
+		VLUI64 returnValue;
+		VLUI64 rCopy = r;
+		VLUI64 thisCopy = *this;
+		int max = std::max(quadwords.size(), r.quadwords.size());
+		for (int i = 0; i < max; i++)
+		{
+			returnValue.setQuadword(i, thisCopy.quadwords[i] & rCopy.quadwords[i]);
+		}
+		return returnValue;
+	}
+
 	bool operator<(const VLUI64& r) const
 	{
 		if (quadwords.size() == r.quadwords.size())
@@ -66,6 +84,11 @@ public:
 	bool operator==(const VLUI64& r) const
 	{
 		return quadwords == r.quadwords;
+	}
+
+	bool operator!=(const VLUI64& r) const
+	{
+		return quadwords != r.quadwords;
 	}
 
 private:

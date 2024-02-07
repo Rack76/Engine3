@@ -4,6 +4,7 @@
 #include "VLUI64.h"
 #include "ComponentManager.h"
 #include "Archetype.h"
+#include "Transform.h"
 
 using EntityId = std::pair<VLUI64, int>;
 
@@ -19,6 +20,8 @@ namespace Engine
 		{
 			VLUI64 newArchetypeSignature = T::typeId() | id.first;
 			VLUI64 oldArchetypeSignature = id.first;
+			if (archetypes.find(newArchetypeSignature) == archetypes.end())
+				archetypes[oldArchetypeSignature].superArchetypes.insert({T::typeId(),  &archetypes[newArchetypeSignature]});
 			id.second = archetypes[oldArchetypeSignature].transferEntity(id.second, T::typeId(), archetypes[newArchetypeSignature]);
 			id.first = newArchetypeSignature;
 		}
@@ -28,7 +31,31 @@ namespace Engine
 		{
 			return (T*)archetypes[id.first].getComponent(id.second, T::typeId());
 		}
+
+		static std::vector<Archetype> getArchetypesWith(VLUI64 included, VLUI64 excluded = VLUI64(0))
+		{
+			included = included | Transform::typeId();
+			std::vector<Archetype> returnValue;
+			archetypes[included].addSuperArchetypes(returnValue, excluded);
+			return returnValue;
+		}
+
+		template <typename T, typename ...Types>
+		EntityManager filterArchetypes()
+		{
+
+		}
+
 	private:
+		template <typename T, typename ...Types>
+		VLUI64 myOr()
+		{
+			if constexpr (sizeof...(Types) == 0)
+				return T::typeId();
+			else
+				return T::typeId() | myOr<Types...>();
+		}
+
 		static std::map<VLUI64, Archetype> archetypes;
 	};
 }
