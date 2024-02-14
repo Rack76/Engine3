@@ -20,6 +20,8 @@ namespace Engine
 		{
 			VLUI64 newArchetypeSignature = T::typeId() | id.first;
 			VLUI64 oldArchetypeSignature = id.first;
+			if (archetypes.find(T::typeId()) == archetypes.end())
+				archetypes[T::typeId()].superArchetypes.insert({ id.first,  &archetypes[newArchetypeSignature] });
 			if (archetypes.find(newArchetypeSignature) == archetypes.end())
 				archetypes[oldArchetypeSignature].superArchetypes.insert({T::typeId(),  &archetypes[newArchetypeSignature]});
 			id.second = archetypes[oldArchetypeSignature].transferEntity(id.second, T::typeId(), archetypes[newArchetypeSignature]);
