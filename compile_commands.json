@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/Archetype.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/Archetype.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/Archetype.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/Component.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/Component.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/Component.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/ComponentManager.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/ComponentManager.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/ComponentManager.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/EntityManager.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/EntityManager.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/EntityManager.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/Log.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/Log.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/Log.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/NameAllocator.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/NameAllocator.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/NameAllocator.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/PoolAllocator.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/PoolAllocator.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/PoolAllocator.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/a.dir/src/VLUI64.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/src/VLUI64.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/src/VLUI64.cpp"
+},
+{
+  "directory": "/storage/emulated/0/Documents/Cxxdroid/Engine3/demo",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -I/storage/emulated/0/Documents/Cxxdroid/Engine3/headers -Wall -std=c++17 -fallow-void-main -o CMakeFiles/Demo.dir/main.cpp.o -c /storage/emulated/0/Documents/Cxxdroid/Engine3/demo/main.cpp",
+  "file": "/storage/emulated/0/Documents/Cxxdroid/Engine3/demo/main.cpp"
+}
+]

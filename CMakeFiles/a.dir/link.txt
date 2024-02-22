@@ -1,0 +1,2 @@
+/data/user/0/ru.iiec.cxxdroid/files/bin/ar qc liba.a CMakeFiles/a.dir/src/Archetype.cpp.o CMakeFiles/a.dir/src/Component.cpp.o CMakeFiles/a.dir/src/ComponentManager.cpp.o CMakeFiles/a.dir/src/EntityManager.cpp.o CMakeFiles/a.dir/src/Log.cpp.o CMakeFiles/a.dir/src/NameAllocator.cpp.o CMakeFiles/a.dir/src/PoolAllocator.cpp.o CMakeFiles/a.dir/src/VLUI64.cpp.o
+/data/user/0/ru.iiec.cxxdroid/files/bin/ranlib liba.a

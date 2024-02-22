@@ -3,6 +3,7 @@
 
 #include "NameAllocator.h"
 #include "Component.h"
+#include "Log.h"
 #include <memory>
 #include <unordered_map>
 

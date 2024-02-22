@@ -1,0 +1,6 @@
+/storage/emulated/0/Documents/Cxxdroid/Engine3/CMakeFiles/rebuild_cache.dir
+/storage/emulated/0/Documents/Cxxdroid/Engine3/CMakeFiles/edit_cache.dir
+/storage/emulated/0/Documents/Cxxdroid/Engine3/CMakeFiles/a.dir
+/storage/emulated/0/Documents/Cxxdroid/Engine3/demo/CMakeFiles/rebuild_cache.dir
+/storage/emulated/0/Documents/Cxxdroid/Engine3/demo/CMakeFiles/edit_cache.dir
+/storage/emulated/0/Documents/Cxxdroid/Engine3/demo/CMakeFiles/Demo.dir

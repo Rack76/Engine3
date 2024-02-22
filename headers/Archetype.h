@@ -31,14 +31,14 @@ public:
 			archetypes.push_back(*this);
 		for (auto _archetype : superArchetypes)
 		{
-			VLUI64 and;
-			and.set(_archetype.first & excluded);
-			null.set(and);
+			VLUI64 andResult;
+			andResult.set(_archetype.first & excluded);
+			null.set(andResult);
 			for (int i = 0; i < null.getSize(); i++)
 			{
 				null.setQuadword(i, 0);
 			}
-			if (and == null)
+			if (andResult == null)
 				_archetype.second->addSuperArchetypes(archetypes, excluded);
 		}
 	}

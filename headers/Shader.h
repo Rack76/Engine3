@@ -6,11 +6,7 @@
 class Shader : public ComponentTemplate<Shader>
 {
 public:
-	char text[];
-
-	void Parse() {
-		strcat(text, "\o");
-	}
+	float value = 3;
 };
 
 #endif

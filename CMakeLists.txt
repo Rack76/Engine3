@@ -14,4 +14,6 @@ include_directories(headers)
 
 add_subdirectory(demo)
 
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES} ${HEADERS})
+if(CMAKE_GENERATOR MATCHES "Visual Studio")
+	source_group(TREE 												${CMAKE_CURRENT_SOURCE_DIR} FILES 		${SOURCES} ${HEADERS})
+endif()

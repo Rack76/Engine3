@@ -14,7 +14,7 @@ public:
 	template <typename T>
 	static void registerComponent()
 	{
-		poolAllocators[T::typeId()].registerComponentFactory<T>();
+		poolAllocators[T::typeId()].template registerComponentFactory<T>();
 		poolAllocators[T::typeId()].allocate();
 	}
 
