@@ -4,7 +4,7 @@ project(Demo)
 
 file(GLOB_RECURSE SOURCES "main.cpp")
 
-if(CMAKE_GENERATOR MATCHES "Visual Studio")
+if(CMAKE_GENERATOR MATCHES "Visual Studio 17 2022")
 	source_group(TREE 												${CMAKE_CURRENT_SOURCE_DIR} FILES 		${SOURCES})
 	file(GLOB LIB "../build/Debug/a.lib")
 else()
